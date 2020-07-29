@@ -13,6 +13,7 @@ const App: React.FC = () => {
         <Routes />
       </View>
     </NavigationContainer>
+    
   );
 };
 
