@@ -1,59 +1,31 @@
 import React from 'react';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createStackNavigator } from '@react-navigation/stack';
+import { FaHome } from 'react-icons/fa';
 
+import Home from '../pages/Home';
 import Profile from '../pages/Profile';
 import GoodNews from '../pages/GoodNews';
 import Tips from '../pages/Tips';
 import Emergency from '../pages/Emergency';
 
-const Tab = createBottomTabNavigator();
+const App = createStackNavigator();
 
 const AppRoutes: React.FC = () => {
   return (
-
-    <Tab.Navigator
-      initialRouteName="GoodNews"
-      tabBarOptions={{
-        activeTintColor: '#e91e63',
+    <App.Navigator
+      screenOptions={{
+        headerShown: false,
+        cardStyle: { backgroundColor: '#ffff' },
       }}
+      initialRouteName="Home"
     >
-      <Tab.Screen
-        name="GoodNews"
-        component={GoodNews}
-        options={{
-          tabBarLabel: 'Home',
-          
-        }}
-      />
-      <Tab.Screen
-        name="Profile"
-        component={Profile}
-        options={{
-          tabBarLabel: 'Profile',
-         //tabBarIcon
-        }}
-      />
-      <Tab.Screen
-        name="Tips"
-        component={Tips}
-        options={{
-          tabBarLabel: 'Tips',
-          
-        }}
-      />
-      <Tab.Screen
-        name="Emergency"
-        component={Emergency}
-        options={{
-          tabBarLabel: 'Emergency',
-          
-        }}
-      />
-      
-    </Tab.Navigator>
+      <App.Screen name="GoodNews" component={GoodNews} />
+      <App.Screen name="Home" component={Home} />
+      <App.Screen name="Tips" component={Tips} />
+      <App.Screen name="Emergency" component={Emergency} />
+      <App.Screen name="Profile" component={Profile} />
+    </App.Navigator>
   );
 };
 
 export default AppRoutes;
-
-

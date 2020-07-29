@@ -11,3 +11,8 @@ export const ExampleText = styled.Text`
   font-size: 18px;
   color: #ffff;
 `;
+
+export const StyledContainer = styled.View`
+  background-color: #F96052;
+  align-items: 'center';
+`;
