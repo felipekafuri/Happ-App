@@ -1,11 +1,13 @@
 import React from 'react';
-
+import { FaArrowLeft } from 'react-icons/fa'
 import { Container, ExampleText } from './styles';
+
 
 const GoodNews: React.FC = () => {
   return (
     <Container>
-      <ExampleText>GoodNews</ExampleText>
+      <ExampleText>OIIIII</ExampleText>
+      <FaArrowLeft size={30} />
     </Container>
   );
 };

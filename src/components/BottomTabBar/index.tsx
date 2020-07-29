@@ -1,9 +1,15 @@
-import * as React from 'react';
-import { Text, View } from 'react-native';
+import React from 'react';
+import { View } from 'react-native';
+import { FaArrowLeft } from 'react-icons/fa'
 
-export default function BottomTabBar() {
-    return (
-      <View></View>
-    );
-  }
-  
+import { Container } from './styles';
+
+const BottomTabBar: React.FC = () => {
+  return (
+    <Container>
+      <FaArrowLeft />
+    </Container>
+  )
+}
+
+export default BottomTabBar;

@@ -1,12 +1,19 @@
 import React from 'react';
-
-import { Container, ExampleText } from './styles';
+import { Text, TouchableOpacity } from 'react-native';
+import { Container, ExampleText, StyledContainer } from './styles';
 
 const Emergency: React.FC = () => {
   return (
-    <Container>
-      <ExampleText>Emergency!!!!!!!!!</ExampleText>
-    </Container>
+    <StyledContainer>
+      < Text>Emergency</Text>
+
+      < Text>SAMU</Text>
+
+      <TouchableOpacity>
+        <Text>192</Text>
+      </TouchableOpacity>
+
+    </StyledContainer>
   );
 };
 
