@@ -9,11 +9,10 @@ const App: React.FC = () => {
   return (
     <NavigationContainer>
       <StatusBar barStyle="dark-content" backgroundColor="#fff" translucent />
-      <View style={{ flex: 1 }}>
+      <View style={{ flex: 1, backgroundColor: '#fff' }}>
         <Routes />
       </View>
     </NavigationContainer>
-
   );
 };
 

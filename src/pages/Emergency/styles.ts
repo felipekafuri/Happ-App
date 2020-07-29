@@ -4,15 +4,39 @@ export const Container = styled.View`
   flex: 1;
   align-items: center;
   justify-content: center;
-  background-color: #356f;
+  background-color: #f96052;
+  padding: 0 16px;
 `;
 
-export const ExampleText = styled.Text`
-  font-size: 18px;
-  color: #ffff;
+export const EmergencyButtonContainer = styled.TouchableOpacity`
+  height: 46px;
+  width: 100%;
+  border-color: #fff;
+  border-radius: 24px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border-width: 2px;
+  margin-bottom: 26px;
 `;
 
-export const StyledContainer = styled.View`
-  background-color: #F96052;
-  align-items: 'center';
+export const ButtonText = styled.Text`
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+`;
+
+export const EmergencyText = styled.Text`
+  font-weight: bold;
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 26px;
+`;
+
+export const HelpText = styled.Text`
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+  align-self: center;
+  margin-bottom: 6px;
 `;

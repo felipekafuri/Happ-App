@@ -1,19 +1,40 @@
 import React from 'react';
-import { Text, TouchableOpacity } from 'react-native';
-import { Container, ExampleText, StyledContainer } from './styles';
+import { Linking } from 'react-native';
+import {
+  Container,
+  EmergencyButtonContainer,
+  ButtonText,
+  EmergencyText,
+  HelpText,
+} from './styles';
+
+const handleButtonPress = () => {
+  Linking.openURL('tel:192');
+};
 
 const Emergency: React.FC = () => {
   return (
-    <StyledContainer>
-      < Text>Emergency</Text>
+    <Container>
+      <EmergencyText>Emergency</EmergencyText>
 
-      < Text>SAMU</Text>
+      <HelpText>Samu</HelpText>
 
-      <TouchableOpacity>
-        <Text>192</Text>
-      </TouchableOpacity>
+      <EmergencyButtonContainer onPress={handleButtonPress}>
+        <ButtonText>192</ButtonText>
+      </EmergencyButtonContainer>
 
-    </StyledContainer>
+      <HelpText>THE NATIONAL SUICIDE PREVENTION LIFELINE</HelpText>
+
+      <EmergencyButtonContainer>
+        <ButtonText>188</ButtonText>
+      </EmergencyButtonContainer>
+
+      <HelpText>WOMAN, DENUNCIATE!</HelpText>
+
+      <EmergencyButtonContainer>
+        <ButtonText>180</ButtonText>
+      </EmergencyButtonContainer>
+    </Container>
   );
 };
 

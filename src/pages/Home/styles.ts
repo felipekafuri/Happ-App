@@ -1,4 +1,4 @@
-import styled from 'styled-components/native'
+import styled from 'styled-components/native';
 
 export const Container = styled.View`
   flex: 1;
@@ -6,18 +6,19 @@ export const Container = styled.View`
   justify-content: center;
   background-color: #fff;
   padding: 0 16px;
-`
+`;
 export const Title = styled.Text`
   font-size: 20px;
-  color: #F96052;
+  color: #f96052;
+  font-family: 'Roboto-Slab';
   font-weight: 500;
   margin-bottom: 8px;
-`
+`;
 export const StyledTextInputContainer = styled.View`
   height: 46px;
-  width:  100%;
+  width: 100%;
   margin-bottom: 16px;
-`
+`;
 
 export const StyledTextInput = styled.TextInput`
   background-color: #f7b2af;
@@ -26,21 +27,20 @@ export const StyledTextInput = styled.TextInput`
   color: #ffff;
   font-size: 18px;
   padding: 0 24px;
-`
+`;
 
 export const GetInButtonContainer = styled.TouchableOpacity`
   height: 46px;
-  width:  100%;
-  background-color: #F96052;
+  width: 100%;
+  background-color: #f96052;
   border-radius: 24px;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-`
+`;
 export const GetInButtonText = styled.Text`
-  font-weight: bold; 
+  font-weight: bold;
   font-size: 20px;
   color: #fff;
-
-`
-
+  margin-right: 16px;
+`;

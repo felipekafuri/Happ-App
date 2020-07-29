@@ -1,6 +1,5 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import { FaHome } from 'react-icons/fa';
 
 import Home from '../pages/Home';
 import Profile from '../pages/Profile';

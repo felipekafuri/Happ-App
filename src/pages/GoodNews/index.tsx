@@ -1,13 +1,12 @@
 import React from 'react';
-import { FaArrowLeft } from 'react-icons/fa'
+import Icon from 'react-native-vector-icons/Feather';
 import { Container, ExampleText } from './styles';
-
 
 const GoodNews: React.FC = () => {
   return (
     <Container>
       <ExampleText>OIIIII</ExampleText>
-      <FaArrowLeft size={30} />
+      <Icon size={30} name="arrow-right" />
     </Container>
   );
 };
