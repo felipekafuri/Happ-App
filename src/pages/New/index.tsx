@@ -9,14 +9,14 @@ import {
 import BottomTabBar from '../../components/BottomTabBar';
 import Menu from '../../components/Menu';
 
-const GoodNews: React.FC = () => {
+const New: React.FC = () => {
   return (
     <>
       <TopMenuContainer>
         <Menu />
       </TopMenuContainer>
       <Container>
-        <ExampleText>GoodNews!!!!!!!!</ExampleText>
+        <ExampleText>New!!!!!!!!</ExampleText>
       </Container>
       <TabBottomContainer>
         <BottomTabBar />
@@ -25,4 +25,4 @@ const GoodNews: React.FC = () => {
   );
 };
 
-export default GoodNews;
+export default New;

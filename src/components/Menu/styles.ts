@@ -1,44 +1,37 @@
-import styled from 'styled-components/native';
+import styled, { css } from 'styled-components/native';
+import { Image } from 'react-native';
 
-export const Container = styled.View`
-  flex: 1;
+interface ContainerProps {
+  isColored: boolean;
+}
+
+export const Container = styled.View<ContainerProps>`
+  margin-top: 24px;
+  flex-direction: row;
+  height: 90px;
+  width: 100%;
   align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+
+  ${props =>
+    props.isColored &&
+    css`
+      background-color: #f96052;
+    `}
+`;
+
+export const IconContainerMenu = styled.TouchableOpacity`
+  height: 100%;
+  width: 20%;
   justify-content: center;
-  background-color: #356f;
+  align-items: center;
+`;
+export const LogoContainerMenu = styled.View`
+  height: 100%;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
 `;
 
-export const StyledMenu = styled.Text`
- width: 100%;
-
-height: 94px;
-
-z-index: 100;
-
-
-
-display: flex;
-
-justify-content: space-between;
-
-align-items: center;
-
-
-
-position: fixed;
-
-top: 0;
-
-left: 0;
-
-right: 0;
-
-padding-left: 5%;
-
-padding-right: 5%;
-
-
-
-background: var(--black);
-
-border-bottom: 2px solid var(--primary);
-`;
+export const ImageLogo = styled(Image)``;

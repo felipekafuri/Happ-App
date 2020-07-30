@@ -12,7 +12,7 @@ export const EmergencyButtonContainer = styled.TouchableOpacity`
   height: 46px;
   width: 100%;
   border-color: #fff;
-  border-radius: 24px;
+  border-radius: 12px;
   align-items: center;
   justify-content: center;
   flex-direction: row;
@@ -39,4 +39,14 @@ export const HelpText = styled.Text`
   color: #fff;
   align-self: center;
   margin-bottom: 6px;
+`;
+
+export const TabBottomContainer = styled.View`
+  align-items: center;
+  justify-content: flex-end;
+`;
+
+export const TopMenuContainer = styled.View`
+  align-items: center;
+  justify-content: flex-start;
 `;

@@ -1,10 +1,9 @@
 import styled from 'styled-components/native';
 
-export const Container = styled.View`
+export const SearchContainer = styled.View`
   flex: 1;
   align-items: center;
   justify-content: center;
-  background-color: #ffff;
 `;
 
 export const TabBottomContainer = styled.View`
@@ -17,7 +16,8 @@ export const TopMenuContainer = styled.View`
   justify-content: flex-start;
 `;
 
-export const ExampleText = styled.Text`
+export const SearchTextInput = styled.TextInput`
+  background-color: #f5eef5;
   font-size: 18px;
-  color: #000;
+  padding: 0 24px;
 `;
