@@ -35,6 +35,6 @@ export const LogoContainerMenu = styled.View`
 `;
 
 export const ImageLogo = styled.Image`
-  height: 90px;
-  width: 90px;
+  max-height: 90px;
+  max-width: 90px;
 `;

@@ -2,7 +2,7 @@ import React from 'react';
 
 import FontAwesomeIcon5 from 'react-native-vector-icons/FontAwesome5';
 
-import { ScrollView } from 'react-native';
+import { ScrollView, Image } from 'react-native';
 
 import {
   TabBottomContainer,
@@ -14,7 +14,6 @@ import {
   MoodText,
   AudioButton,
 } from './styles';
-
 import BottomTabBar from '../../components/BottomTabBar';
 import Menu from '../../components/Menu';
 
@@ -24,7 +23,6 @@ const Mood: React.FC = () => {
       <TopMenuContainer>
         <Menu />
       </TopMenuContainer>
-
       <MoodText>MOOD</MoodText>
 
       <TipsContainer>
@@ -63,7 +61,6 @@ const Mood: React.FC = () => {
           </TipsButton>
         </ScrollView>
       </TipsContainer>
-
       <TextFeelingContainer>
         <TextFeeling
           placeholder="WHAT ARE YOU THINKING TODAY?"
@@ -71,12 +68,10 @@ const Mood: React.FC = () => {
           numberOfLines={5}
         />
       </TextFeelingContainer>
-
       <MoodText>SAY ANYTHING YOU WANT</MoodText>
       <AudioButton>
         <FontAwesomeIcon5 name="microphone-alt" size={60} color="#f96052" />
       </AudioButton>
-
       <TabBottomContainer>
         <BottomTabBar />
       </TabBottomContainer>

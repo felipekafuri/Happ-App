@@ -9,6 +9,7 @@ export const SearchContainer = styled.View`
 export const TabBottomContainer = styled.View`
   align-items: center;
   justify-content: flex-end;
+  flex-direction: row;
 `;
 
 export const TopMenuContainer = styled.View`

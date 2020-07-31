@@ -28,10 +28,7 @@ const Menu: React.FC<MenuProps> = ({ colored }, ...rest) => {
           size={30}
         />
       </IconContainerMenu>
-
-      <LogoContainerMenu>
-        <Image source={LogoImg} />
-      </LogoContainerMenu>
+      <Image source={LogoImg} />
 
       <IconContainerMenu>
         <Icon

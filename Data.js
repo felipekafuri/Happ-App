@@ -1,5 +1,35 @@
 module.exports = {
   data: {
+    goodNews: [
+      {
+        id: '1',
+        title: 'VACINA DE OXFORD CONTRA A COVID19 DEVE CHEGAR EM DEZEMBRO',
+        description: 'oi',
+        image: 'assets/vacina.png',
+      },
+      {
+        id: '2',
+        title: 'VACINA DE OXFORD CONTRA A COVID19 DEVE CHEGAR EM DEZEMBRO',
+        description: 'oi',
+        image:
+          'https://i.em.com.br/NBvcBzzF0zzZKz-qYcTiu71OONE=/820x0/smart/imgsapp.em.com.br/app/noticia_127983242361/2020/07/28/1170905/20200728185727446812a.jpg',
+      },
+      {
+        id: '13',
+        title: 'VACINA DE OXFORD CONTRA A COVID19 DEVE CHEGAR EM DEZEMBRO',
+        description: 'oi',
+        image:
+          'https://i.em.com.br/NBvcBzzF0zzZKz-qYcTiu71OONE=/820x0/smart/imgsapp.em.com.br/app/noticia_127983242361/2020/07/28/1170905/20200728185727446812a.jpg',
+      },
+      {
+        id: '3',
+        title: 'VACINA DE OXFORD CONTRA A COVID19 DEVE CHEGAR EM DEZEMBRO',
+        description: 'oi',
+        image:
+          'https://i.em.com.br/NBvcBzzF0zzZKz-qYcTiu71OONE=/820x0/smart/imgsapp.em.com.br/app/noticia_127983242361/2020/07/28/1170905/20200728185727446812a.jpg',
+      },
+    ],
+
     curses: [
       {
         id: '2345',
