@@ -58,14 +58,14 @@ const Tips: React.FC = () => {
             contentContainerStyle={{ padding: 20 }}
           >
             <TipsButton activeOpacity={0.6}>
-              <FontAwesomeIcon5 name="book" size={50} color="#fff" />
-            </TipsButton>
-            <TipsButton activeOpacity={0.6}>
               <FontAwesomeIcon5
                 name="hand-holding-medical"
                 size={50}
                 color="#fff"
               />
+            </TipsButton>
+            <TipsButton activeOpacity={0.6}>
+              <FontAwesomeIcon5 name="book" size={50} color="#fff" />
             </TipsButton>
             <TipsButton activeOpacity={0.6}>
               <FontAwesomeIcon5 name="recycle" size={50} color="#fff" />
@@ -90,7 +90,7 @@ const Tips: React.FC = () => {
 
         <TipsDetailsContainer>
           <ScrollView
-            showsHorizontalScrollIndicator={false}
+            showsVerticalScrollIndicator={false}
             contentContainerStyle={{ padding: 10 }}
             style={{ flex: 1 }}
           >
@@ -107,6 +107,8 @@ const Tips: React.FC = () => {
                     {curse.enterprise}
                   </TipsDetailsEnterprise>
                 </TipsDescriptionContainer>
+
+                <FatherIcon name="plus" size={30} color="#fff" />
               </TipsDetails>
             ))}
           </ScrollView>

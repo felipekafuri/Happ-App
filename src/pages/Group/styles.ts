@@ -4,6 +4,7 @@ export const SearchContainer = styled.View`
   flex: 1;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
 `;
 
 export const TabBottomContainer = styled.View`
@@ -21,4 +22,5 @@ export const SearchTextInput = styled.TextInput`
   background-color: #f5eef5;
   font-size: 18px;
   padding: 0 24px;
+  margin-left: 16px;
 `;

@@ -63,15 +63,18 @@ const Mood: React.FC = () => {
       </TipsContainer>
       <TextFeelingContainer>
         <TextFeeling
-          placeholder="WHAT ARE YOU THINKING TODAY?"
+          textAlignVertical="top"
+          placeholder="SAY SOMETHING"
           placeholderTextColor="#f96052"
           numberOfLines={5}
+          multiline={true}
         />
+        <MoodText>SAY SOMETHING</MoodText>
+        <AudioButton>
+          <FontAwesomeIcon5 name="microphone-alt" size={60} color="#f96052" />
+        </AudioButton>
       </TextFeelingContainer>
-      <MoodText>SAY ANYTHING YOU WANT</MoodText>
-      <AudioButton>
-        <FontAwesomeIcon5 name="microphone-alt" size={60} color="#f96052" />
-      </AudioButton>
+
       <TabBottomContainer>
         <BottomTabBar />
       </TabBottomContainer>

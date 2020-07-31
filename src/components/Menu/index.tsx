@@ -10,6 +10,7 @@ import {
 } from './styles';
 
 import LogoImg from '../../assets/logo.png';
+import LogoWhite from '../../assets/logoBranco.png';
 
 interface MenuProps {
   colored?: boolean;
@@ -25,17 +26,17 @@ const Menu: React.FC<MenuProps> = ({ colored }, ...rest) => {
           name="user"
           color={colored ? '#fff' : '#f96052'}
           onPress={() => navigation.navigate('New')}
-          size={30}
+          size={40}
         />
       </IconContainerMenu>
-      <Image source={LogoImg} />
+      <Image source={colored ? LogoWhite : LogoImg} />
 
       <IconContainerMenu>
         <Icon
           name="plus"
           color={colored ? '#fff' : '#f96052'}
           onPress={() => navigation.navigate('Profile')}
-          size={30}
+          size={40}
         />
       </IconContainerMenu>
     </Container>

@@ -58,14 +58,14 @@ const GoodNews: React.FC = () => {
 
         <GoodNewsContainer>
           <ScrollView
+            showsVerticalScrollIndicator={false}
             contentContainerStyle={{ padding: 10 }}
             style={{ flex: 1 }}
           >
             {data.data.goodNews.map(goodNew => (
               <GoodNewsDetails key={goodNew.id}>
-                <View style={{ width: '80%' }}>
-                  <NewsImage source={NewsImg} />
-                </View>
+                <NewsImage source={NewsImg} />
+
                 <GoodNewsDescriptionContainer>
                   <GoodNewsDetailsTitle>{goodNew.title}</GoodNewsDetailsTitle>
                   <GoodNewsDetailsDescription>
