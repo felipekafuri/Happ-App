@@ -25,7 +25,7 @@ const Menu: React.FC<MenuProps> = ({ colored }, ...rest) => {
         <Icon
           name="user"
           color={colored ? '#fff' : '#f96052'}
-          onPress={() => navigation.navigate('New')}
+          onPress={() => navigation.navigate('Profile')}
           size={40}
         />
       </IconContainerMenu>
@@ -35,7 +35,7 @@ const Menu: React.FC<MenuProps> = ({ colored }, ...rest) => {
         <Icon
           name="plus"
           color={colored ? '#fff' : '#f96052'}
-          onPress={() => navigation.navigate('Profile')}
+          onPress={() => navigation.navigate('New')}
           size={40}
         />
       </IconContainerMenu>

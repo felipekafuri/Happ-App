@@ -5,7 +5,7 @@ export const Container = styled.View`
   align-items: center;
   justify-content: center;
   background-color: #ffff;
-  padding: 16px;
+  padding: 26px;
 `;
 
 export const TabBottomContainer = styled.View`
@@ -23,8 +23,8 @@ export const TipsContainer = styled.View`
 `;
 
 export const TipsButton = styled.TouchableOpacity`
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   align-items: center;
   justify-content: center;
   background-color: #f7b2af;

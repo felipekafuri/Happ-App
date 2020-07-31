@@ -7,6 +7,7 @@ import {
   TabBottomContainer,
   TopMenuContainer,
   SearchTextInput,
+  SearchTextContainer,
 } from './styles';
 import BottomTabBar from '../../components/BottomTabBar';
 import Menu from '../../components/Menu';
@@ -17,13 +18,14 @@ const Group: React.FC = () => {
       <TopMenuContainer>
         <Menu />
       </TopMenuContainer>
-
       <SearchContainer>
-        <FontAwesomeIcon5 name="search" size={40} color="#f96052" />
-        <SearchTextInput
-          placeholder="PESQUISAR"
-          placeholderTextColor="#f96052"
-        />
+        <SearchTextContainer>
+          <FontAwesomeIcon5 name="search" size={20} color="#f96052" />
+          <SearchTextInput
+            placeholder="SEARCH"
+            placeholderTextColor="#f96052"
+          ></SearchTextInput>
+        </SearchTextContainer>
       </SearchContainer>
 
       <TabBottomContainer>

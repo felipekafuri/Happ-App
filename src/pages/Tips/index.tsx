@@ -4,6 +4,7 @@ import { ScrollView } from 'react-native';
 import FatherIcon from 'react-native-vector-icons/Feather';
 import FontAwesomeIcon5 from 'react-native-vector-icons/FontAwesome5';
 import FontAwesomeIcon from 'react-native-vector-icons/FontAwesome';
+import EvilIcons from 'react-native-vector-icons/EvilIcons';
 
 import {
   Container,
@@ -108,7 +109,7 @@ const Tips: React.FC = () => {
                   </TipsDetailsEnterprise>
                 </TipsDescriptionContainer>
 
-                <FatherIcon name="plus" size={30} color="#fff" />
+                <EvilIcons name="plus" size={36} color="#fff" />
               </TipsDetails>
             ))}
           </ScrollView>

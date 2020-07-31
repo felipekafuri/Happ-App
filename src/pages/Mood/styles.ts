@@ -29,11 +29,12 @@ export const MoodText = styled.Text`
 
 export const TextFeelingContainer = styled.View`
   flex: 1;
-  padding: 36px;
+
+  padding: 0 30px;
 `;
 
 export const TextFeeling = styled.TextInput`
-  background-color: #f5eef5;
+  background: #f9f9f9;
   border-radius: 8px;
   font-size: 16px;
   padding: 8px 24px;
@@ -53,4 +54,6 @@ export const AudioButton = styled.TouchableOpacity`
   margin-top: 30px;
 `;
 
-export const TipsContainer = styled.View``;
+export const TipsContainer = styled.View`
+  padding: 0 10px;
+`;

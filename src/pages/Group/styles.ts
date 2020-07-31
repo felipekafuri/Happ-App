@@ -2,9 +2,7 @@ import styled from 'styled-components/native';
 
 export const SearchContainer = styled.View`
   flex: 1;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
+  justify-content: flex-start;
 `;
 
 export const TabBottomContainer = styled.View`
@@ -19,8 +17,19 @@ export const TopMenuContainer = styled.View`
 `;
 
 export const SearchTextInput = styled.TextInput`
-  background-color: #f5eef5;
   font-size: 18px;
   padding: 0 24px;
-  margin-left: 16px;
+  width: 100%;
+  height: 50px;
+  font-weight: 200;
+`;
+
+export const SearchTextContainer = styled.View`
+  background-color: #f5eef5;
+  align-items: center;
+  flex-direction: row;
+  padding: 0px 24px;
+
+  border-top-width: 1px;
+  border-color: #ccc;
 `;

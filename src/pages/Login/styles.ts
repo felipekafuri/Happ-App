@@ -5,7 +5,7 @@ export const Container = styled.View`
   align-items: center;
   justify-content: center;
   background-color: #fff;
-  padding: 0 16px;
+  padding: 0 36px;
 `;
 export const Title = styled.Text`
   font-size: 20px;

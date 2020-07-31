@@ -17,3 +17,9 @@ export const IconContainer = styled.TouchableOpacity`
   align-items: center;
   justify-content: center;
 `;
+
+export const IconText = styled.Text`
+  color: #f96052;
+  font-size: 10px;
+  font-weight: 700;
+`;

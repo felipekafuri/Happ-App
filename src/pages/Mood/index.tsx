@@ -64,10 +64,21 @@ const Mood: React.FC = () => {
       <TextFeelingContainer>
         <TextFeeling
           textAlignVertical="top"
-          placeholder="SAY SOMETHING"
+          placeholder="WHAT ARE YOU THINKING TODAY?"
           placeholderTextColor="#f96052"
           numberOfLines={5}
           multiline={true}
+          style={{
+            shadowColor: '#000',
+            shadowOffset: {
+              width: 0,
+              height: 1,
+            },
+            shadowOpacity: 0.22,
+            shadowRadius: 2.22,
+
+            elevation: 3,
+          }}
         />
         <MoodText>SAY SOMETHING</MoodText>
         <AudioButton>
