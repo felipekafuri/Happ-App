@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image } from 'react-native';
+import { Image, StyleSheet } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/Feather';
 import {
@@ -8,6 +8,7 @@ import {
   IconContainerMenu,
   ImageLogo,
 } from './styles';
+
 import LogoImg from '../../assets/logo.png';
 
 interface MenuProps {
@@ -29,7 +30,7 @@ const Menu: React.FC<MenuProps> = ({ colored }, ...rest) => {
       </IconContainerMenu>
 
       <LogoContainerMenu>
-        <ImageLogo source={LogoImg} />
+        <Image source={LogoImg} />
       </LogoContainerMenu>
 
       <IconContainerMenu>

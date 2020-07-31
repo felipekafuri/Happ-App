@@ -94,9 +94,13 @@ const Tips: React.FC = () => {
             contentContainerStyle={{ padding: 10 }}
             style={{ flex: 1 }}
           >
-            {data.data.curses.map(curse => (
+            {data.data.health.map(curse => (
               <TipsDetails key={curse.id}>
-                <FontAwesomeIcon5 name="book" size={50} color="#fff" />
+                <FontAwesomeIcon5
+                  name="hand-holding-medical"
+                  size={40}
+                  color="#fff"
+                />
                 <TipsDescriptionContainer>
                   <TipsDetailsTitle>{curse.title}</TipsDetailsTitle>
                   <TipsDetailsEnterprise>

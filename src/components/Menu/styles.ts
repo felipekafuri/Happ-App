@@ -34,4 +34,7 @@ export const LogoContainerMenu = styled.View`
   align-items: center;
 `;
 
-export const ImageLogo = styled(Image)``;
+export const ImageLogo = styled.Image`
+  height: 90px;
+  width: 90px;
+`;

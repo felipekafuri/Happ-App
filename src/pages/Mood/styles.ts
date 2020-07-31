@@ -38,15 +38,18 @@ export const TextFeelingContainer = styled.View`
 
 export const TextFeeling = styled.TextInput`
   background-color: #f5eef5;
-  border-radius: 16;
-  font-size: 18px;
+  border-radius: 12px;
+  font-size: 16px;
   padding: 0 24px;
 `;
 
-export const AudioButton = styled.TouchableHighlight`
+export const AudioButton = styled.TouchableOpacity`
   width: 100px;
   height: 100px;
   border-color: #f96052;
   border-radius: 50px;
   border-width: 3px;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
 `;
