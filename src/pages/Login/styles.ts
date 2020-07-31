@@ -47,11 +47,11 @@ export const GetInButtonText = styled.Text`
 
 export const ImageContainer = styled.View`
   justify-content: center;
-  padding-top: 100px;
+  padding-top: 300px;
   align-items: center;
-  margin-bottom: 32px;
+  margin-bottom: 0px;
   width: 100%;
   flex: 0.5;
-  transform: scale(0.3);
+  transform: scale(0.35);
   height: 100%;
 `;

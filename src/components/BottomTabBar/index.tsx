@@ -3,6 +3,8 @@ import React from 'react';
 import { useNavigation } from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/Feather';
 import FontAwesomeIcon from 'react-native-vector-icons/FontAwesome';
+import AntDesignIcon from 'react-native-vector-icons/AntDesign';
+
 import { Container, IconContainer, IconText } from './styles';
 
 const BottomTabBar: React.FC = () => {
@@ -20,13 +22,13 @@ const BottomTabBar: React.FC = () => {
         <IconText>Ideas</IconText>
       </IconContainer>
       <IconContainer>
-        <Icon
+        <AntDesignIcon
           size={25}
-          name="play"
+          name="rocket1"
           color="#f96052"
           onPress={() => navigation.navigate('Group')}
         />
-        <IconText>Search</IconText>
+        <IconText>Progress</IconText>
       </IconContainer>
       <IconContainer>
         <Icon

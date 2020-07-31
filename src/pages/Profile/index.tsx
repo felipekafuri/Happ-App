@@ -2,12 +2,15 @@ import React from 'react';
 
 import {
   Container,
-  ExampleText,
   TabBottomContainer,
   TopMenuContainer,
+  ProflieImage,
+  ProfileText,
 } from './styles';
 import BottomTabBar from '../../components/BottomTabBar';
 import Menu from '../../components/Menu';
+
+import profileImg from '../../assets/amanda.jpg';
 
 const Profile: React.FC = () => {
   return (
@@ -16,7 +19,8 @@ const Profile: React.FC = () => {
         <Menu />
       </TopMenuContainer>
       <Container>
-        <ExampleText>Profile!!!!!!!!</ExampleText>
+        <ProflieImage source={profileImg} />
+        <ProfileText>@amanda</ProfileText>
       </Container>
       <TabBottomContainer>
         <BottomTabBar />

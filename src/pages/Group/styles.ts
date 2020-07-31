@@ -1,8 +1,8 @@
 import styled from 'styled-components/native';
 
-export const Container = styled.View`
+export const Container = styled.ScrollView`
   flex: 1;
-  padding: 20px;
+  padding: 26px;
 `;
 
 export const TabBottomContainer = styled.View`
@@ -57,6 +57,7 @@ export const TextDetails = styled.Text`
 
 export const ArrowButton = styled.TouchableOpacity`
   align-self: center;
+  padding: 14px;
 `;
 
 export const TipsButton = styled.TouchableOpacity`
@@ -64,7 +65,7 @@ export const TipsButton = styled.TouchableOpacity`
   height: 90px;
   align-items: center;
   justify-content: center;
-  background-color: #f7b2af;
+  background-color: #f96052;
   margin-right: 8px;
   border-radius: 4px;
   margin-bottom: 4px;
@@ -75,5 +76,34 @@ export const EmojiContainer = styled.View`
   height: 90px;
   flex-direction: row;
   align-items: center;
-  align-self: center;
+  margin-bottom: 14px;
+`;
+
+export const HummorText = styled.Text`
+  color: #f96052;
+  font-size: 17px;
+`;
+
+export const BoldText = styled.Text`
+  color: #f96052;
+  font-size: 18px;
+  font-weight: bold;
+`;
+
+export const WordsText = styled.Text`
+  color: #6f6f6f;
+  font-size: 14px;
+  font-style: italic;
+`;
+
+export const TextContainer = styled.View`
+  flex-direction: column;
+  align-items: flex-start;
+  width: 70%;
+`;
+
+export const CatText = styled.Text`
+  color: #f96052;
+  font-size: 14px;
+  font-weight: 700;
 `;

@@ -86,7 +86,7 @@ const Tips: React.FC = () => {
               <FontAwesomeIcon5 name="recycle" size={50} color="#fff" />
             </TipsButton>
             <TipsButton activeOpacity={0.6}>
-              <FontAwesomeIcon5 name="hat-cowboy" size={50} color="#fff" />
+              <FontAwesomeIcon5 name="globe" size={50} color="#fff" />
             </TipsButton>
             <TipsButton activeOpacity={0.6}>
               <FontAwesomeIcon name="soccer-ball-o" size={50} color="#fff" />

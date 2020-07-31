@@ -33,15 +33,6 @@ export const TextFeelingContainer = styled.View`
   padding: 0 30px;
 `;
 
-export const TextFeeling = styled.TextInput`
-  background: #f9f9f9;
-  border-radius: 8px;
-  font-size: 16px;
-  padding: 8px 24px;
-  margin-bottom: 40px;
-  width: 100%;
-`;
-
 export const AudioButton = styled.TouchableOpacity`
   width: 100px;
   height: 100px;
@@ -58,10 +49,6 @@ export const TipsContainer = styled.View`
   padding: 0 10px;
 `;
 
-export const ButtonContainer = styled.View`
-  flex-direction: row;
-`;
-
 export const StyledButton = styled.TouchableOpacity`
   align-items: center;
   margin-left: 278px;
@@ -74,4 +61,8 @@ export const InputContainer = styled.View`
   padding: 8px 14px;
   margin-bottom: 40px;
   width: 100%;
+`;
+
+export const Container = styled.ScrollView`
+  flex: 1;
 `;

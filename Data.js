@@ -104,32 +104,32 @@ module.exports = {
     health: [
       {
         id: '234r5',
-        title: 'AULAS DE MEDITAÇÃO PARA INICIANTES',
-        enterprise: '@Jade',
+        title: 'MEDITATION CLASSES FOR BEGINNERS',
+        enterprise: '@Felipe',
         isLive: false,
       },
       {
         id: '233445',
-        title: 'EXERCICIOS DE PILATES EM CASA',
+        title: 'PILATES EXERCISES AT HOME',
         enterprise: '@Amanda',
         isLive: false,
       },
       {
         id: '243334',
-        title: 'JOGO DA EMPATIA COM AMIGOS',
-        enterprise: '@Carol',
+        title: 'EMPATHY GAME WITH FRIENDS',
+        enterprise: '@carolquiterio',
         isLive: false,
       },
       {
         id: '233443254',
-        title: 'CRONOGRAMA PARA BEBER ÁGUA',
+        title: 'WATER DRINKING SCHEDULE',
         enterprise: '@Alexandre',
         isLive: false,
       },
       {
         id: '233442433465',
-        title: 'DICA DE SAÚDE',
-        enterprise: '@Felipe',
+        title: 'HEALTH TIP',
+        enterprise: '@Bhia',
         isLive: false,
       },
       {

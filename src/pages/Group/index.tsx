@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react';
 
 import SimpleLineIcon from 'react-native-vector-icons/SimpleLineIcons';
 import FontAwesomeIcon5 from 'react-native-vector-icons/FontAwesome5';
-
 import FontAwesomeIcon from 'react-native-vector-icons/FontAwesome';
+import IoniIcon from 'react-native-vector-icons/Ionicons';
+
 import {
   Container,
   TabBottomContainer,
@@ -15,6 +16,11 @@ import {
   ArrowButton,
   TipsButton,
   EmojiContainer,
+  HummorText,
+  BoldText,
+  WordsText,
+  TextContainer,
+  CatText,
 } from './styles';
 import BottomTabBar from '../../components/BottomTabBar';
 import Menu from '../../components/Menu';
@@ -50,7 +56,7 @@ const Group: React.FC = () => {
       <SearchInputContainer>
         <HelloText>HELLO AMANDA, THIS IS YOUR PROGRESS!</HelloText>
       </SearchInputContainer>
-      <Container>
+      <Container showsVerticalScrollIndicator={false}>
         {notes.map(note => (
           <ProgressContainer
             style={{
@@ -67,7 +73,7 @@ const Group: React.FC = () => {
           >
             <FontAwesomeIcon5 name="microphone-alt" size={30} color="#f96052" />
             <TextDetails>
-              {note.date.slice(8)} -{note.title}
+              {note.date.slice(8)} {note.title}
             </TextDetails>
 
             <FontAwesomeIcon name="lock" color="#898989" size={20} />
@@ -75,13 +81,44 @@ const Group: React.FC = () => {
         ))}
 
         <ArrowButton>
-          <SimpleLineIcon name="arrow-down" size={25} color="#898989" />
+          <SimpleLineIcon name="arrow-down" size={20} color="#898989" />
         </ArrowButton>
 
         <EmojiContainer>
           <TipsButton activeOpacity={0.6}>
             <SimpleLineIcon name="emotsmile" size={50} color="#fff" />
           </TipsButton>
+          <TextContainer>
+            <HummorText>
+              YOU WERE HAPPY <BoldText>67%</BoldText> OF THE TIME
+            </HummorText>
+            <WordsText>YOU USED THE WORDS</WordsText>
+            <CatText>CATS, AFFECTION, AND SUN</CatText>
+          </TextContainer>
+        </EmojiContainer>
+        <EmojiContainer>
+          <TipsButton activeOpacity={0.6}>
+            <IoniIcon name="md-sad-outline" size={50} color="#fff" />
+          </TipsButton>
+          <TextContainer>
+            <HummorText>
+              YOU WERE SAD <BoldText>58%</BoldText> OF THE TIME
+            </HummorText>
+            <WordsText>YOU USED THE WORDS</WordsText>
+            <CatText>FAMILY, MONEY, NEIGBORS</CatText>
+          </TextContainer>
+        </EmojiContainer>
+        <EmojiContainer>
+          <TipsButton activeOpacity={0.6}>
+            <IoniIcon name="md-sad-outline" size={50} color="#fff" />
+          </TipsButton>
+          <TextContainer>
+            <HummorText>
+              YOU WERE SAD <BoldText>58%</BoldText> OF THE TIME
+            </HummorText>
+            <WordsText>YOU USED THE WORDS</WordsText>
+            <CatText>FAMILY, MONEY, NEIGBORS</CatText>
+          </TextContainer>
         </EmojiContainer>
       </Container>
 
