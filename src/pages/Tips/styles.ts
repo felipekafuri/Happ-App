@@ -5,7 +5,6 @@ export const Container = styled.View`
   align-items: center;
   justify-content: center;
   background-color: #ffff;
-  padding: 26px;
 `;
 
 export const TabBottomContainer = styled.View`
@@ -20,6 +19,7 @@ export const TopMenuContainer = styled.View`
 
 export const TipsContainer = styled.View`
   flex: 1;
+  padding: 0 16px;
 `;
 
 export const TipsButton = styled.TouchableOpacity`
@@ -35,6 +35,7 @@ export const TipsButton = styled.TouchableOpacity`
 export const TipsDetailsContainer = styled.View`
   flex: 3;
   height: 100%;
+  padding: 16px;
 `;
 
 export const TipsDetails = styled.View`
@@ -65,4 +66,23 @@ export const TipsDetailsEnterprise = styled.Text`
   font-size: 16px;
   margin-top: 6px;
   color: #fff;
+`;
+
+export const SearchInputContainer = styled.View`
+  width: 100%;
+  height: 56px;
+  flex-direction: row;
+  background-color: #f5eef5;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  border-color: #ccc;
+  border-top-width: 1px;
+`;
+
+export const SearchTextInput = styled.TextInput`
+  background: transparent;
+  font-size: 18px;
+  width: 90%;
+  padding: 0 24px;
 `;

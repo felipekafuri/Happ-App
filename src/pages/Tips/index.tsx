@@ -17,6 +17,8 @@ import {
   TipsDetailsTitle,
   TipsDetailsEnterprise,
   TipsDescriptionContainer,
+  SearchInputContainer,
+  SearchTextInput,
 } from './styles';
 
 import data from '../../../Data.js';
@@ -52,6 +54,18 @@ const Tips: React.FC = () => {
         <Menu />
       </TopMenuContainer>
       <Container>
+        <SearchInputContainer>
+          <FontAwesomeIcon5
+            name="search"
+            size={30}
+            color="#f96052"
+            style={{ marginLeft: 8 }}
+          />
+          <SearchTextInput
+            placeholder="SEARCH"
+            placeholderTextColor="#f96052"
+          />
+        </SearchInputContainer>
         <TipsContainer>
           <ScrollView
             horizontal

@@ -53,18 +53,6 @@ const Mood: React.FC = () => {
     }
   }, []);
 
-  useEffect(() => {
-    try {
-      const username = 'amanda';
-
-      api
-        .get('/', { params: { username } })
-        .then(response => console.log(response.data.docs));
-    } catch (err) {
-      console.log(err);
-    }
-  }, []);
-
   return (
     <>
       <TopMenuContainer>
