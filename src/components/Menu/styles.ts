@@ -6,7 +6,7 @@ interface ContainerProps {
 }
 
 export const Container = styled.View<ContainerProps>`
-  margin-top: 24px;
+  margin-top: 12px;
   flex-direction: row;
   height: 90px;
   width: 100%;
@@ -32,9 +32,9 @@ export const LogoContainerMenu = styled.View`
   width: 60%;
   justify-content: center;
   align-items: center;
+  transform: scale(0.5);
 `;
 
 export const ImageLogo = styled.Image`
-  max-height: 90px;
-  max-width: 90px;
+  width: 100%;
 `;

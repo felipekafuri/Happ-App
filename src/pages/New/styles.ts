@@ -42,3 +42,27 @@ export const DetailsContainer = styled.TextInput`
   background: #f9f9f9;
   margin-bottom: 10px;
 `;
+
+export const AudioButton = styled.TouchableOpacity`
+  width: 100px;
+  height: 100px;
+  border-color: #f96052;
+  border-radius: 50px;
+  border-width: 3px;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  margin-top: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
+`;
+
+export const LiveText = styled.Text`
+  color: #f96052;
+  font-size: 20px;
+  font-weight: 700;
+`;
+
+export const ButtonContainer = styled.View`
+  flex-direction: row;
+`;

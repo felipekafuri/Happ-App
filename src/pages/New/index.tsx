@@ -6,7 +6,12 @@ import {
   TopMenuContainer,
   DetailsContainer,
   TitleContainer,
+  AudioButton,
+  LiveText,
+  ButtonContainer,
 } from './styles';
+
+import FontEntypo from 'react-native-vector-icons/Entypo';
 import BottomTabBar from '../../components/BottomTabBar';
 import Menu from '../../components/Menu';
 
@@ -52,6 +57,15 @@ const New: React.FC = () => {
             elevation: 3,
           }}
         />
+        <ButtonContainer>
+          <AudioButton>
+            <FontEntypo name="video-camera" size={40} color="#f96052" />
+          </AudioButton>
+
+          <AudioButton>
+            <LiveText>LIVE</LiveText>
+          </AudioButton>
+        </ButtonContainer>
       </Container>
       <TabBottomContainer>
         <BottomTabBar />

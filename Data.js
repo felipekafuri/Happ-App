@@ -3,37 +3,37 @@ module.exports = {
     goodNews: [
       {
         id: '4',
-        title: 'BEBÊ PANDA RESCÉM NASCIDO BRINCA PELA PRIMEIRA VEZ COM A MÃE',
+        title: 'PANDA BABY NEWBORN PLAYING FOR THE FIRST TIME WITH THE MOTHER',
         description:
-          'Cenas registradas mostram a nova mamãe panda brincando… se divertindo pela primeira vez com e bebê. ',
+          'Recorded scenes show the new mommy panda playing ... having fun with her baby for the first time.',
         image: '',
       },
       {
         id: '1',
-        title: 'VACINA DE OXFORD CONTRA A COVID19 DEVE CHEGAR ESSE ANO',
+        title: 'OXFORD VACCINE AGAINST COVID19 MUST COME THIS YEAR',
         description:
-          'Vacina teve o efeito esperado pelos pesquisadores nos primeiros estágios. Terceira fase dos testes está ocorrendo no Brasil.',
+          'Vaccine had the effect expected by researchers in the early stages. Third phase of testing is taking place in Brazil.',
         image: 'assets/vacina.png',
       },
       {
         id: '2',
-        title: 'ADOÇÃO DE ANIMAIS AUMENTA NA QUARENTENA',
+        title: 'ANIMAL ADOPTION INCREASES IN QUARANTINE',
         description:
-          'ONGs reportam que o número de animais adotados aumentou significativamente.',
+          'NGOs report that the number of animals adopted has increased significantly.',
         image: '',
       },
       {
         id: '3',
-        title: 'VOVÓS DE 90 ANOS ENSINAO INGREDIENTES PARA VIDA',
+        title: 'GRANDMA OF 90 YEARS TEACHING INGREDIENTS FOR LIFE',
         description:
-          'Vovós com mais de 90 anos de experiência, que vivem em uma casa de repouso, mostram o que realmente importa pra ser feliz e ter uma vida plena.',
+          'Grannies with more than 90 years of experience, who live in a nursing home, show what really matters to be happy and have a full life.',
         image: '',
       },
       {
         id: '13',
-        title: 'QUASE 90 MIL PESSOAS SE CURARAM DA COVID-19 EM MG',
+        title: 'ALMOST 90 THOUSAND PEOPLE HEALED FROM COVID-19 IN MG',
         description:
-          'Boletim do Governo Estadual informou que foram confirmadas mais 57 novas mortes causadas pela doença; número de infectados passa de 119 mil',
+          'State Government bulletin reported that 57 more new deaths from the disease were confirmed; number of infected goes from 119 thousand',
         image: '',
       },
     ],

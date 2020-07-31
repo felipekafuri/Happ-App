@@ -57,3 +57,21 @@ export const AudioButton = styled.TouchableOpacity`
 export const TipsContainer = styled.View`
   padding: 0 10px;
 `;
+
+export const ButtonContainer = styled.View`
+  flex-direction: row;
+`;
+
+export const StyledButton = styled.TouchableOpacity`
+  align-items: center;
+  margin-left: 278px;
+  margin-top: -8px;
+`;
+
+export const InputContainer = styled.View`
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 8px 14px;
+  margin-bottom: 40px;
+  width: 100%;
+`;

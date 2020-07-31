@@ -3,11 +3,11 @@ import React from 'react';
 import FontAwesomeIcon5 from 'react-native-vector-icons/FontAwesome5';
 
 import {
-  SearchContainer,
+  Container,
   TabBottomContainer,
   TopMenuContainer,
   SearchTextInput,
-  SearchTextContainer,
+  SearchInputContainer,
 } from './styles';
 import BottomTabBar from '../../components/BottomTabBar';
 import Menu from '../../components/Menu';
@@ -18,15 +18,19 @@ const Group: React.FC = () => {
       <TopMenuContainer>
         <Menu />
       </TopMenuContainer>
-      <SearchContainer>
-        <SearchTextContainer>
-          <FontAwesomeIcon5 name="search" size={20} color="#f96052" />
-          <SearchTextInput
-            placeholder="SEARCH"
-            placeholderTextColor="#f96052"
-          ></SearchTextInput>
-        </SearchTextContainer>
-      </SearchContainer>
+      <SearchInputContainer>
+        <FontAwesomeIcon5
+          name="search"
+          size={30}
+          color="#f96052"
+          style={{ marginLeft: 8 }}
+        />
+        <SearchTextInput
+          placeholder="PESQUISAR"
+          placeholderTextColor="#f96052"
+        />
+      </SearchInputContainer>
+      <Container />
 
       <TabBottomContainer>
         <BottomTabBar />

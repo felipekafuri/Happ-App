@@ -1,9 +1,23 @@
-import React from 'react';
+import React, { useCallback, useRef } from 'react';
 
 import FontAwesomeIcon5 from 'react-native-vector-icons/FontAwesome5';
+import EntypoIcon from 'react-native-vector-icons/Entypo';
+
+import { FormHandles } from '@unform/core';
+import { Form } from '@unform/mobile';
+
+import Input from '../../components/Input';
+
+import api from '../../services/api';
+
+interface FormData {
+  username: string;
+  title: string;
+  text: string;
+  feeling: number;
+}
 
 import { ScrollView, Image } from 'react-native';
-
 import {
   TabBottomContainer,
   TopMenuContainer,
@@ -13,11 +27,24 @@ import {
   TextFeelingContainer,
   MoodText,
   AudioButton,
+  ButtonContainer,
+  StyledButton,
+  InputContainer,
 } from './styles';
 import BottomTabBar from '../../components/BottomTabBar';
 import Menu from '../../components/Menu';
 
 const Mood: React.FC = () => {
+  const formRef = useRef<FormHandles>(null);
+
+  const handleSubmit = useCallback(async (data: FormData) => {
+    const { title, feeling, text, username } = data;
+
+    console.log(title, Number(feeling), text, username);
+
+    // await api.post('/', { username, text, feeling, title });
+  }, []);
+
   return (
     <>
       <TopMenuContainer>
@@ -62,24 +89,31 @@ const Mood: React.FC = () => {
         </ScrollView>
       </TipsContainer>
       <TextFeelingContainer>
-        <TextFeeling
-          textAlignVertical="top"
-          placeholder="WHAT ARE YOU THINKING TODAY?"
-          placeholderTextColor="#f96052"
-          numberOfLines={5}
-          multiline={true}
-          style={{
-            shadowColor: '#000',
-            shadowOffset: {
-              width: 0,
-              height: 1,
-            },
-            shadowOpacity: 0.22,
-            shadowRadius: 2.22,
+        <Form ref={formRef} onSubmit={handleSubmit} style={{ width: '100%' }}>
+          <InputContainer>
+            <Input
+              name="title"
+              placeholder="TITLE"
+              placeholderTextColor="#f96052"
+            />
+            <Input
+              name="text"
+              placeholder="WHAT ARE YOU THINKING TODAY?"
+              numberOfLines={10}
+              multiline={true}
+              placeholderTextColor="#f96052"
+            />
 
-            elevation: 3,
-          }}
-        />
+            <StyledButton
+              onPress={() => {
+                formRef.current?.submitForm();
+              }}
+            >
+              <EntypoIcon name="paper-plane" size={30} color="#f96052" />
+            </StyledButton>
+          </InputContainer>
+        </Form>
+
         <MoodText>SAY SOMETHING</MoodText>
         <AudioButton>
           <FontAwesomeIcon5 name="microphone-alt" size={60} color="#f96052" />
