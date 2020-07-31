@@ -1,7 +1,9 @@
-import React, { useCallback, useRef } from 'react';
+import React, { useCallback, useRef, useEffect } from 'react';
 
 import FontAwesomeIcon5 from 'react-native-vector-icons/FontAwesome5';
 import EntypoIcon from 'react-native-vector-icons/Entypo';
+
+import { Alert, ScrollView, Image, AppRegistry } from 'react-native';
 
 import { FormHandles } from '@unform/core';
 import { Form } from '@unform/mobile';
@@ -10,14 +12,6 @@ import Input from '../../components/Input';
 
 import api from '../../services/api';
 
-interface FormData {
-  username: string;
-  title: string;
-  text: string;
-  feeling: number;
-}
-
-import { ScrollView, Image } from 'react-native';
 import {
   TabBottomContainer,
   TopMenuContainer,
@@ -34,15 +28,41 @@ import {
 import BottomTabBar from '../../components/BottomTabBar';
 import Menu from '../../components/Menu';
 
+interface FormData {
+  username: string;
+  title: string;
+  text: string;
+  feeling: number;
+}
+
 const Mood: React.FC = () => {
   const formRef = useRef<FormHandles>(null);
 
   const handleSubmit = useCallback(async (data: FormData) => {
-    const { title, feeling, text, username } = data;
+    try {
+      const { title, feeling, text, username = 'amanda' } = data;
 
-    console.log(title, Number(feeling), text, username);
+      const numberFeeling = Number(feeling);
+      const post = { username, text, feeling: numberFeeling, title };
 
-    // await api.post('/', { username, text, feeling, title });
+      const response = await api.post('/', post);
+
+      Alert.alert(`Success!!`, 'Your note has been created!');
+    } catch (err) {
+      console.log(err);
+    }
+  }, []);
+
+  useEffect(() => {
+    try {
+      const username = 'amanda';
+
+      api
+        .get('/', { params: { username } })
+        .then(response => console.log(response.data.docs));
+    } catch (err) {
+      console.log(err);
+    }
   }, []);
 
   return (
@@ -100,8 +120,15 @@ const Mood: React.FC = () => {
               name="text"
               placeholder="WHAT ARE YOU THINKING TODAY?"
               numberOfLines={10}
-              multiline={true}
+              multiline
               placeholderTextColor="#f96052"
+            />
+            <Input
+              name="feeling"
+              placeholder="0-9 what is your mood?"
+              placeholderTextColor="#f96052"
+              keyboardType="number-pad"
+              maxLength={1}
             />
 
             <StyledButton
