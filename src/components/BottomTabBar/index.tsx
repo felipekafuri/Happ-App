@@ -13,24 +13,6 @@ const BottomTabBar: React.FC = () => {
   return (
     <Container>
       <IconContainer>
-        <FontAwesomeIcon
-          size={28}
-          name="lightbulb-o"
-          color="#f96052"
-          onPress={() => navigation.navigate('Tips')}
-        />
-        <IconText>Ideas</IconText>
-      </IconContainer>
-      <IconContainer>
-        <AntDesignIcon
-          size={25}
-          name="rocket1"
-          color="#f96052"
-          onPress={() => navigation.navigate('Group')}
-        />
-        <IconText>Progress</IconText>
-      </IconContainer>
-      <IconContainer>
         <Icon
           size={25}
           name="home"
@@ -47,6 +29,24 @@ const BottomTabBar: React.FC = () => {
           onPress={() => navigation.navigate('Mood')}
         />
         <IconText>Diary</IconText>
+      </IconContainer>
+      <IconContainer>
+        <FontAwesomeIcon
+          size={28}
+          name="lightbulb-o"
+          color="#f96052"
+          onPress={() => navigation.navigate('Tips')}
+        />
+        <IconText>Ideas</IconText>
+      </IconContainer>
+      <IconContainer>
+        <AntDesignIcon
+          size={25}
+          name="rocket1"
+          color="#f96052"
+          onPress={() => navigation.navigate('Group')}
+        />
+        <IconText>Progress</IconText>
       </IconContainer>
       <IconContainer>
         <Icon

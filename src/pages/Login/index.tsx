@@ -35,7 +35,7 @@ const Login: React.FC = () => {
           />
         </StyledTextInputContainer>
 
-        <GetInButtonContainer onPress={() => navigation.navigate('Tips')}>
+        <GetInButtonContainer onPress={() => navigation.navigate('GoodNews')}>
           <GetInButtonText>GET IN</GetInButtonText>
           <Icon size={20} name="arrow-right" color="#ffff" />
         </GetInButtonContainer>
